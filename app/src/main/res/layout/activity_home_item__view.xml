@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.fazal.capalino.Activities.HomeItem_ViewActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_below="@+id/logo"
+        android:background="@color/text_color"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:src="@drawable/back"
+            android:onClick="BackClick"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <com.example.fazal.capalino.CustomViews.CustomTextView_Bold
+            android:textColor="@color/white"
+            android:id="@+id/headertext"
+            android:layout_centerInParent="true"
+            android:text="@string/home"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+    <!--
+    *************Main Content********************
+    -->
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:background="@drawable/round_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/icon_img"
+            android:src="@drawable/icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <com.example.fazal.capalino.CustomViews.CustomTextView_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:id="@+id/text_header"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/icon_img"
+            android:text="@string/home_view_header"/>
+
+        <com.example.fazal.capalino.CustomViews.CustomTextView_Book
+            android:layout_below="@+id/text_header"
+            android:id="@+id/time_duration"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="4dp"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:text="5 DAYS AGO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_below="@+id/time_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@+id/time_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.example.fazal.capalino.CustomViews.CustomTextView_Book
+            android:id="@+id/longdescrip"
+            android:layout_toRightOf="@+id/icon_img"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="28dp"
+            android:textSize="16sp"
+            android:scrollbars="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_duration"
+            android:text="@string/home_view_detail"/>
+
+        <com.example.fazal.capalino.CustomViews.CustomTextView_Book
+            android:layout_below="@+id/link_header"
+            android:id="@+id/link_content"
+            android:layout_marginTop="4dp"
+            android:scrollbars="vertical"
+            android:layout_marginLeft="28dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="16dp"
+            android:onClick="UrlClick"
+            android:textColor="@color/deep_purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
+    <!--
+       *******************Footer Layot**************************
+    -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_gravity="bottom"
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/bar1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="BrowseClick"
+            android:src="@drawable/browse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/track"
+            android:onClick="TrackClick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="SettingsClick"
+            android:src="@drawable/setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="ResourceClick"
+            android:src="@drawable/resources"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

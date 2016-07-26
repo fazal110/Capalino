@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">MWBE</string>
+    <string name="heading_text">MWBE Mobile Assistant</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="login_btn_name">LOG IN</string>
+    <string name="register_btn_name">REGISTER</string>
+    <string name="forgot_password_text">Forgot Password?</string>
+    <string name="header_text">Capalino+Company is an award-winning lobbying + stregic consulting firm, recently ranked #1 in NYC, that specialize in helping companies,
+     not-for-profits and institutions succeed in New York City.</string>
+    <string name="name">Name</string>
+    <string name="full_name">Full Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="activate_btn_name">ACTIVATE</string>
+    <string name="back_btn_name">BACK</string>
+    <string name="company_name">Company Name</string>
+    <string name="retype_pass">Repeat Password</string>
+    <string name="heading_text_activation_dialog">ALERT</string>
+    <string name="activation_message">Thank you for registering</string>
+    <string name="activation_code">Activation Code</string>
+    <string name="submit_btn_name">SUBMIT</string>
+    <string name="activation_submited_message">This Agreement and an operating rules \n for a Capalino website established by \n Capalino constitute
+    the entire agreement \n of the parties with respect to the subject matter hereof, and supersede all previous written or oral agreement
+    between the parties with respect to such subject matter. This Agreement shall be construed in accordance with the laws of the state of New York,
+     without regard to its conflict of law rules</string>
+    <string name="continue_btn_name">CONTINUE</string>
+    <string name="home">HOME</string>
+    <string name="switch_textview">Capalino RFP/Bid Matching</string>
+    <string name="keyword_search">Keyword Search</string>
+    <string name="search_hint">Search here</string>
+    <string name="agency">Agency</string>
+    <string name="agency_hint">DOE</string>
+    <string name="procurement">ProcurementType</string>
+    <string name="procurement_hint">Construction</string>
+    <string name="contract">Contract Value</string>
+    <string name="contractvalue">Less than 50,000$</string>
+    <string name="browse_btn_name">Browse</string>
+    <string name="reflisting_header">RFP/BID LISTINGS</string>
+    <string name="track_btn_name">TRACK</string>
+    <string name="advice_btn_name">ADVICE</string>
+    <string name="browserfp">BROWSE RFP/BIDS</string>
+    <string name="advice_header">ADVICE REQUEST</string>
+    <string name="phno">Phone Number</string>
+    <string name="call_time">Best Time to Call</string>
+    <string name="comments">Comments</string>
+    <string name="send_btn_name">SEND</string>
+    <string name="agency_title">AGENCY</string>
+    <string name="procurement_type_title">PROCUREMENT TYPE</string>
+    <string name="contract_value_title">CONTRACT VALUE</string>
+    <string name="settings">SETTINGS</string>
+    <string name="update_btn_txt">UPDATE</string>
+
+    <string name="GEOGRAPHIC_COVERAGE">Geographic Coverage</string>
+    <string name="target_contact">Target Contract Value</string>
+    <string name="certification">Certifications</string>
+    <string name="capablities">Industry and Capabilities</string>
+    <string name="updateprofile">Update Profile</string>
+
+    <string name="GEOGRAPHIC_COVERAGE_title">GEOGRAPHIC COVERAGE</string>
+
+    <string name="target_contact_title">TARGET CONTRACT VALUE</string>
+
+    <string name="certification_title">CERTIFICATIONS</string>
+
+    <string name="update_capablities">UPDATE CAPABILITY</string>
+    <string name="capablity_title">INDUSTRY AND CAPABILITIES</string>
+    <string name="construction_hint">Construction</string>
+    <string name="goods_hint">Goods</string>
+    <string name="services_hint">Standard Services</string>
+    <string name="professional_services">Professional Services</string>
+    <string name="others">Others</string>
+
+    <string name="capablities_search_activity">CAPABILITIES SEARCH</string>
+
+    <string name="resource_title">RESOURCES</string>
+
+    <!--Facebook AppId-->
+    <string name="facebook_app_id">841118815993409</string>
+
+    <string name="home_view_header">What is the Impact of Union Workers on Building Affordable Housing Under Mayor de Blasios Housing Program</string>
+
+    <string name="home_view_detail">The following report was released by the NYC Independent Budget Office</string>
+
+    <string name="myrefs">MY RFPs</string>
+
+    <string name="text_track_list">Do I need to file a Broker Certificate</string>
+
+    <string name="Advertising">Advertising, Graphic Arts and Marketing</string>
+
+    <string name="Construction">Construction</string>
+
+    <string name="Architectural">Architectural, Engineering and Surveying</string>
+
+    <string name="VConstruction">Vertical Construction</string>
+
+    <string name="Environmental">Environmental</string>
+
+    <string name="Construction_related">Construction Related Services</string>
+
+    <string name="Maintenance">Facilities Maintenance and Building Ops</string>
+
+    <string name="General_maintenance">General maintenance</string>
+
+    <string name="security">Safety and Security</string>
+
+    <string name="it">Information Technology (IT)</string>
+
+
+
+</resources>

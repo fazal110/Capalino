@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.example.fazal.capalino"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def date = new Date();
+                def formattedDate = date.format('dd-MM-yyyy')
+                def finalName = "Capalino Version "+ variant.versionCode + ".0.2 " + formattedDate + ".apk";
+                output.outputFile = new File(output.outputFile.parent, finalName)
+            }
+        }
+    }
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res/layout-normal']
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    compile 'com.github.medyo:dynamicbox:1.2@aar'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+}
